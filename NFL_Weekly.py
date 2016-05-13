@@ -15,7 +15,8 @@ import os
 
 #path and output data file
 os.getcwd()
-os.chdir("D:\\MY ALL DESKTOP DATA\\Spring 2016\\Web and Social 5377\\Assignment4\\")
+directoryPath = "..\.."
+os.chdir(directoryPath)
 f = csv.writer(open("NFL_Weekly.csv","w"))
 f.writerow(['Team Rank','Team Name','Team Points','Team Comments'])
 url = 'http://espn.go.com/college-football/powerrankings'
